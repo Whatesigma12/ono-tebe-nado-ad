@@ -1,24 +1,12 @@
-/* ============================================================
-   БАЗОВЫЕ НАСТРОЙКИ
-   ============================================================ */
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Raleway';
-}
-
 a {
   color: inherit;
 }
-
-/* ============================================================
-   ПЕРЕИСПОЛЬЗУЕМЫЕ БЛОКИ
-   ============================================================ */
 
 .overlay {
   position: absolute;
@@ -32,8 +20,8 @@ a {
   flex-direction: column;
   align-items: flex-start;
   max-width: 240px;
-  font-style: normal;
   font-size: 18px;
+  font-style: normal;
   line-height: 1.35;
 }
 
@@ -44,10 +32,6 @@ a {
 .address p {
   margin: 0;
 }
-
-/* ============================================================
-   HEADER
-   ============================================================ */
 
 .header {
   display: grid;
@@ -98,10 +82,6 @@ a {
   justify-self: end;
 }
 
-/* ============================================================
-   COVER
-   ============================================================ */
-
 .cover {
   position: relative;
   display: flex;
@@ -109,11 +89,11 @@ a {
   justify-content: space-between;
   min-height: 757px;
   padding: 165px 50px 50px;
-  background-image: url('../images/cover.jpg');
+  color: #fff;
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
 }
 
 .cover__title {
@@ -122,7 +102,7 @@ a {
   margin: 0;
   font-size: 100px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.15;
   text-transform: uppercase;
 }
 
@@ -154,8 +134,8 @@ a {
   position: relative;
   z-index: 2;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .cover__description-text {
@@ -167,18 +147,15 @@ a {
 
 .bet-button {
   padding: 12px 32px;
-  border: 1px solid #fff;
-  background-color: transparent;
   color: #fff;
-  font-family: inherit;
+  font-family: Raleway;
   font-size: 22px;
+  line-height: 1;
   text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #fff;
   cursor: pointer;
 }
-
-/* ============================================================
-   LOTS
-   ============================================================ */
 
 .lots {
   padding: 180px 24px 0;
@@ -201,9 +178,8 @@ a {
 }
 
 .lots__card-list-item {
-  width: calc((100% - 50px) / 3);
-  min-height: 450px;
-  flex-grow: 1;
+  width: 334px;
+  min-height: 596px;
 }
 
 .card-link {
@@ -219,22 +195,23 @@ a {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  min-height: 596px;
   padding: 50px 40px;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card_type_film {
-  background-image: url('../images/card-lot-01.jpg');
+  background-image: url("../images/card-lot-01.jpg");
 }
 
 .card_type_book {
-  background-image: url('../images/card-lot-02.jpg');
+  background-image: url("../images/card-lot-02.jpg");
 }
 
 .card_type_picture {
-  background-image: url('../images/card-lot-03.jpg');
+  background-image: url("../images/card-lot-03.jpg");
 }
 
 .card__title {
@@ -263,13 +240,10 @@ a {
   text-decoration: underline;
 }
 
-/* ============================================================
-   ABOUT
-   ============================================================ */
-
 .about {
   display: grid;
-  grid-template-columns: 335px 1fr;
+  grid-template-columns: 334px 1fr;
+  align-items: start;
   gap: 25px;
   padding: 180px 24px 0;
 }
@@ -281,13 +255,13 @@ a {
 
 .about__logo {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 240px;
   height: 240px;
   margin: 0 auto;
-  border-radius: 50%;
   background-color: #000;
+  border-radius: 50%;
 }
 
 .about__logo-image {
@@ -315,10 +289,6 @@ a {
   margin: 0;
 }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
-
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -338,7 +308,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
   margin: 0;
   padding: 0;
   list-style-type: none;
