@@ -9,7 +9,6 @@
 }
 
 body {
-  margin: 0 auto;
   font-family: 'Raleway';
 }
 
@@ -35,7 +34,7 @@ a {
   max-width: 240px;
   font-style: normal;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.35;
 }
 
 .address a {
@@ -54,7 +53,7 @@ a {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 100px 50px;
+  padding: 92px 50px;
 }
 
 .header__menu {
@@ -67,11 +66,11 @@ a {
   gap: 32px;
   margin: 0;
   padding: 0;
-  list-style: circle;
+  list-style-type: circle;
 }
 
 .header__links-list-item_no-bullet {
-  list-style: none;
+  list-style-type: none;
 }
 
 .header__link {
@@ -85,8 +84,8 @@ a {
 
 .header__logo {
   display: block;
-  width: 130px;
-  height: 102px;
+  width: 148px;
+  height: 105px;
 }
 
 .header__logo-image {
@@ -109,7 +108,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   min-height: 757px;
-  padding: 155px 50px 50px;
+  padding: 165px 50px 50px;
   background-image: url('../images/cover.jpg');
   background-position: center;
   background-size: cover;
@@ -123,7 +122,7 @@ a {
   margin: 0;
   font-size: 100px;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -186,7 +185,7 @@ a {
 }
 
 .lots__heading {
-  margin: 0 0 29px 40px;
+  margin: 0 0 27px 40px;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -198,12 +197,13 @@ a {
   gap: 25px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .lots__card-list-item {
   width: calc((100% - 50px) / 3);
-  min-height: 595px;
+  min-height: 450px;
+  flex-grow: 1;
 }
 
 .card-link {
@@ -270,9 +270,8 @@ a {
 .about {
   display: grid;
   grid-template-columns: 335px 1fr;
-  align-items: start;
   gap: 25px;
-  padding: 153px 24px 0;
+  padding: 180px 24px 0;
 }
 
 .about__column {
@@ -293,7 +292,7 @@ a {
 
 .about__logo-image {
   display: block;
-  width: 130px;
+  width: 148px;
   height: auto;
 }
 
@@ -339,9 +338,10 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 8px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   text-align: center;
 }
 
@@ -360,7 +360,7 @@ a {
   gap: 48px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .footer__social-link {
